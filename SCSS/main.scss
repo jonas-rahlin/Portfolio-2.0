@@ -1,0 +1,143 @@
+@import "config";
+//MAKE LOGO PULSAR
+
+body{
+    background-color: $main;
+    font-size:16px;
+    font-family: $font-a;
+}
+
+#navbar{
+    width:100%;
+    position:absolute;
+    background:none;
+    font-size:0.8rem;
+    font-weight:600;
+
+    &-logo{
+        color:$secondary;
+        font-family: $font-logo;
+        font-size:3rem;
+        padding:0 0.5rem;
+        border-radius:5px;
+        border-bottom:solid 2px $fourth;
+        text-decoration: none;
+    }
+    .container{
+        width:90%;
+        margin:auto;
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-between;
+        padding:1rem 0;
+    }
+}
+
+#navbar-links{
+    list-style: none;
+
+    .navbar-link{
+        display: inline-block;
+        padding:0.5rem;
+        
+        & a{
+            color:$secondary;
+            text-decoration: none;
+            &:hover{
+                color:$fourth;
+            }
+        }
+
+    }
+
+    #navbar-link__last{
+        border:solid 2px $fourth;
+        border-radius:5px;
+        & a{
+            color:$fourth;
+        }
+        
+        &:hover{
+            background:$fourth-opacity;
+        }
+    }
+
+    .navbar-link__no{
+        color:$fourth;
+    }
+}
+
+#hero{
+    height:100vh;
+    .container{
+        width:90%;
+        height:100%;
+        margin:auto;
+    }
+
+    &-title{
+        margin:auto;
+        width:75%;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__h1{
+            color:$secondary;
+            font-size:4rem;
+        }
+    
+        &__h2{
+            color:$third;
+            font-size:3rem;
+        }
+    
+        &__pa{
+            color:$fourth;
+            font-size: 1rem;
+            font-weight:600;
+        }
+    
+        &__pb{
+            color:$third;
+            font-size: 1rem;
+            margin-top:0.5rem;
+            width:30rem;
+        }
+    
+        &__a{
+            color:$fourth;
+            font-weight:600;
+            margin-top:0.5rem;
+            border:solid 2px $fourth;
+            align-self:flex-start;
+            padding:0.5rem;
+            border-radius:5px;
+            text-decoration: none;
+            &:hover{
+                background-color: $fourth-opacity;
+            }
+        }
+    }
+
+    &-social{
+        position:absolute;
+        bottom:1rem;
+        & a{
+            color:$secondary;
+            font-size:1.5rem;
+            padding-right:0.5rem;
+
+            &:hover{
+                color:$fourth;
+            }
+
+            & i:hover{
+                transform: translateY(-5px);
+                transition: 0.3s;
+            }
+        }
+    }
+}

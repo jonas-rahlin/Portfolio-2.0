@@ -1,0 +1,35 @@
+$font-a: Montserrat;
+// $font-b: ;
+$font-logo: Pulsar-Original;
+$black: #1b1b1b;
+$white: white;
+$grey: #505050;
+$main: #dee2ee;
+// $main-ascent: ;
+$secondary: #2A324B;
+// $secondary-ascent: ;
+$third: #767B91;
+
+$fourth: #9E1946;
+$fourth-opacity: rgba(158, 25, 69, 0.050);
+
+@font-face{
+    font-family: Pulsar-Original;
+    src: url(../Assets/Pulsar-Original.otf)
+}
+
+//ADD TEMP FOR CONTAINER WIDTH
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+:root{
+
+}
+
+html{
+
+}

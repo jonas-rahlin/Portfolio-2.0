@@ -1,0 +1,176 @@
+@font-face {
+  font-family: Pulsar-Original;
+  src: url(../Assets/Pulsar-Original.otf);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #dee2ee;
+  font-size: 16px;
+  font-family: Montserrat;
+}
+
+#navbar {
+  width: 100%;
+  position: absolute;
+  background: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+#navbar-logo {
+  color: #2A324B;
+  font-family: Pulsar-Original;
+  font-size: 3rem;
+  padding: 0 0.5rem;
+  border-radius: 5px;
+  border-bottom: solid 2px #9E1946;
+  text-decoration: none;
+}
+
+#navbar .container {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 0;
+}
+
+#navbar-links {
+  list-style: none;
+}
+
+#navbar-links .navbar-link {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+#navbar-links .navbar-link a {
+  color: #2A324B;
+  text-decoration: none;
+}
+
+#navbar-links .navbar-link a:hover {
+  color: #9E1946;
+}
+
+#navbar-links #navbar-link__last {
+  border: solid 2px #9E1946;
+  border-radius: 5px;
+}
+
+#navbar-links #navbar-link__last a {
+  color: #9E1946;
+}
+
+#navbar-links #navbar-link__last:hover {
+  background: rgba(158, 25, 69, 0.05);
+}
+
+#navbar-links .navbar-link__no {
+  color: #9E1946;
+}
+
+#hero {
+  height: 100vh;
+}
+
+#hero .container {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+#hero-title {
+  margin: auto;
+  width: 75%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#hero-title__h1 {
+  color: #2A324B;
+  font-size: 4rem;
+}
+
+#hero-title__h2 {
+  color: #767B91;
+  font-size: 3rem;
+}
+
+#hero-title__pa {
+  color: #9E1946;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#hero-title__pb {
+  color: #767B91;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  width: 30rem;
+}
+
+#hero-title__a {
+  color: #9E1946;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  border: solid 2px #9E1946;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+#hero-title__a:hover {
+  background-color: rgba(158, 25, 69, 0.05);
+}
+
+#hero-social {
+  position: absolute;
+  bottom: 1rem;
+}
+
+#hero-social a {
+  color: #2A324B;
+  font-size: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+#hero-social a:hover {
+  color: #9E1946;
+}
+
+#hero-social a i:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
