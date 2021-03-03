@@ -65,10 +65,13 @@ body {
   color: #2A324B;
   text-decoration: none;
   padding: 0.5rem;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
 }
 
 #navbar-links .navbar-link a:hover {
-  color: #9E1946;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
 }
 
 #navbar-links #navbar-link__last {
@@ -82,10 +85,8 @@ body {
   height: 100%;
   padding: 0.5rem;
   display: block;
-}
-
-#navbar-links #navbar-link__last:hover {
-  background: rgba(158, 25, 69, 0.05);
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
 }
 
 #navbar-links .navbar-link__no {
@@ -151,10 +152,12 @@ body {
   padding: 0.5rem;
   border-radius: 5px;
   text-decoration: none;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
 }
 
 #hero-title__a:hover {
-  background-color: rgba(158, 25, 69, 0.05);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #hero-social {
