@@ -59,12 +59,12 @@ body {
 
 #navbar-links .navbar-link {
   display: inline-block;
-  padding: 0.5rem;
 }
 
 #navbar-links .navbar-link a {
   color: #2A324B;
   text-decoration: none;
+  padding: 0.5rem;
 }
 
 #navbar-links .navbar-link a:hover {
@@ -78,6 +78,10 @@ body {
 
 #navbar-links #navbar-link__last a {
   color: #9E1946;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  display: block;
 }
 
 #navbar-links #navbar-link__last:hover {
@@ -140,7 +144,7 @@ body {
 #hero-title__a {
   color: #9E1946;
   font-weight: 600;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   border: solid 2px #9E1946;
   -ms-flex-item-align: start;
       align-self: flex-start;
