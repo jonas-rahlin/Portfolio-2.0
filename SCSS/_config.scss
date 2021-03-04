@@ -3,15 +3,53 @@ $font-a: Montserrat;
 $font-logo: Pulsar-Original;
 $black: #1b1b1b;
 $white: white;
-$grey: #505050;
+$grey: #d3d3d3;
 $main: #dee2ee;
-// $main-ascent: ;
 $secondary: #2A324B;
-// $secondary-ascent: ;
 $third: #767B91;
+$third-faded: rgba(118, 123, 145, 0.300);
+$fourth: #17a4c7;
+$link-hover: rgba(23, 164, 199, 0.200);
 
-$fourth: #9E1946;
-$link-hover: rgba(255, 255, 255, 0.500);
+@mixin section-h1{
+    color:$secondary;
+    font-size:1.3rem;
+    border-bottom:solid 1px $third-faded;
+    width:100%;
+    & span{
+        color:$fourth;
+    }
+}
+
+@mixin section-h2{
+    font-size:2rem;
+    color:$third;
+    margin-bottom:0.5rem;
+}
+
+@mixin section-p{
+    color:$third;
+}
+
+// $font-size-a:;
+// $font-size-b:;
+// $font-size-c:;
+
+@mixin wB {
+    margin:auto;
+    width:90%;
+}
+
+@mixin wA {
+    margin:auto;
+    width:75%;
+}
+
+@mixin center{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
 
 @font-face{
     font-family: Pulsar-Original;

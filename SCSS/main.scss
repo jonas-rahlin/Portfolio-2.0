@@ -1,82 +1,19 @@
 @import "config";
+@import "navigation";
 //MAKE LOGO PULSAR
 
 body{
-    background-color: $main;
+    background-color: $white;
     font-size:16px;
     font-family: $font-a;
 }
 
-#navbar{
-    width:100%;
-    position:absolute;
-    background:none;
-    font-size:0.8rem;
-    font-weight:600;
-
-    &-logo{
-        color:$secondary;
-        font-family: $font-logo;
-        font-size:3rem;
-        padding:0 0.5rem;
-        border-radius:5px;
-        border-bottom:solid 2px $fourth;
-        text-decoration: none;
-    }
-    .container{
-        width:90%;
-        margin:auto;
-        display:flex;
-        flex-direction:row;
-        align-items: center;
-        justify-content: space-between;
-        padding:1rem 0;
-    }
-}
-
-#navbar-links{
-    list-style: none;
-
-    .navbar-link{
-        display: inline-block;
-        
-        
-        & a{
-            color:$secondary;
-            text-decoration: none;
-            padding:0.5rem;
-            transition: background-color 200ms linear;
-            &:hover{
-                background:$link-hover;
-                border-radius:5px;
-            }
-        }
-
-    }
-
-    #navbar-link__last{
-        border:solid 2px $fourth;
-        border-radius:5px;
-
-        & a{
-            color:$fourth;
-            width:100%;
-            height:100%;
-            padding:0.5rem;
-            display:block;
-            transition: background-color 200ms linear;
-        }
-    }
-
-    .navbar-link__no{
-        color:$fourth;
-    }
-}
-
 #hero{
     height:100vh;
+    background: linear-gradient(rgba(222, 226, 238, 0.950), rgba(222, 226, 238, 0.950)), url(https://images.unsplash.com/photo-1469365556835-3da3db4c253b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+    background-position:bottom;
     .container{
-        width:90%;
+        @include wA;
         height:100%;
         margin:auto;
     }
@@ -109,7 +46,7 @@ body{
             color:$third;
             font-size: 1rem;
             margin-top:0.5rem;
-            width:30rem;
+            width:35rem;
         }
     
         &__a{
@@ -134,7 +71,7 @@ body{
         & a{
             color:$secondary;
             font-size:1.5rem;
-            padding-right:0.5rem;
+            padding:0.3rem;
 
             &:hover{
                 color:$fourth;
@@ -143,6 +80,94 @@ body{
             & i:hover{
                 transform: translateY(-5px);
                 transition: 0.3s;
+            }
+        }
+    }
+}
+
+#about{
+    background:$white;
+    .container{
+        @include wA;
+        padding-top:5rem;
+        padding-bottom:5rem;
+    }
+
+    &-title{
+        @include wB;
+        &__h1{
+            @include section-h1;
+        }
+    }
+
+    &-me{
+        @include wB;
+        margin:auto;
+        display:flex;
+        flex-direction:row;
+        align-items: flex-start;
+        justify-content:center;
+        height:100%;
+
+        h2{
+            @include section-h2;
+        }
+
+        p{
+            @include section-p;
+        }
+
+        span{
+            border:solid 1px $third;
+            padding:0.5rem 0.5rem;
+            font-size:0.6rem;
+            font-weight:400;
+            color:$third;
+            margin:0rem 0.5rem 0.5rem 0rem;
+            display:inline-block;
+            cursor: default;
+
+            &:hover{
+                transform: scale(0.95);
+            }
+        }
+
+        &__info{
+            padding:3rem 2rem;
+            width:100%;
+            height:100%;
+        }
+
+        &__skills{
+            padding:3rem 2rem;
+            width:100%;
+            height:100%;
+
+            & .container{
+                margin:0;
+                padding:0;
+                overflow:none;
+            }
+        }
+    }
+}
+
+#projects{
+    height:100vh;
+    background: $main;
+    .container{
+        @include wA;
+        padding-top:5rem;
+        padding-bottom:5rem;
+    }
+
+    &-title{
+        @include wB;
+        &__h1{
+            @include section-h1;
+         
+            & span{
+                color:$fourth;
             }
         }
     }
