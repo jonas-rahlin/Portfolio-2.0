@@ -15,8 +15,7 @@
         text-decoration: none;
     }
     .container{
-        width:90%;
-        margin:auto;
+        @include wB;
         display:flex;
         flex-direction:row;
         align-items: center;

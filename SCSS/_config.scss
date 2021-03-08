@@ -31,6 +31,21 @@ $link-hover: rgba(23, 164, 199, 0.200);
     color:$third;
 }
 
+@mixin skills{
+    border:solid 1px $third;
+    padding:0.5rem 0.5rem;
+    font-size:0.6rem;
+    font-weight:400;
+    color:$third;
+    margin:0rem 0.5rem 0.5rem 0rem;
+    display:inline-block;
+    cursor: default;
+
+    &:hover{
+        transform: scale(0.95);
+    }
+}
+
 // $font-size-a:;
 // $font-size-b:;
 // $font-size-c:;
@@ -43,6 +58,10 @@ $link-hover: rgba(23, 164, 199, 0.200);
 @mixin wA {
     margin:auto;
     width:75%;
+}
+
+@mixin mA {
+    margin:3rem 2rem;
 }
 
 @mixin center{
