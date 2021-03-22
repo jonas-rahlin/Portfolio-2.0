@@ -172,7 +172,7 @@ body{
         .projects-works__item{
             @include mA;
             height:520px;
-            width:100%;
+            width: 800px;
 
             span{
                 @include skills;
