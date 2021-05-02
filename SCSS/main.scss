@@ -1,368 +1,381 @@
 @import "config";
 @import "navigation";
-//MAKE LOGO PULSAR
+@import "animations";
 
-body{
-    background-color: $white;
-    font-size:16px;
-    font-family: $font-a;
+body {
+  background-color: $white;
+  font-size: 16px;
+  font-family: $font-a;
+  @include ani-d;
 }
 
-#hero{
-    height:100vh;
-    background: linear-gradient(rgba(222, 226, 238, 0.950), rgba(222, 226, 238, 0.950)), url(https://images.unsplash.com/photo-1469365556835-3da3db4c253b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
-    background-position:bottom;
-    .container{
-        @include wA;
-        height:94%;
+#hero {
+  height: 100vh;
+  background-color: $main;
+  background: linear-gradient(
+      rgba(222, 226, 238, 0.9),
+      rgba(222, 226, 238, 0.5)
+    ),
+    url(https://images.unsplash.com/photo-1612524103232-cbdd7a263230?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+  background-position: center;
+  .container {
+    @include wA;
+    height: 94%;
+  }
+
+  &-title {
+    @include wB;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__h1 {
+      color: $secondary;
+      font-size: 4rem;
+      @include ani-b;
     }
 
-    &-title{
-        @include wB;
-        margin:auto;
-        height:100%;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-
-        &__h1{
-            color:$secondary;
-            font-size:4rem;
-        }
-    
-        &__h2{
-            color:$third;
-            font-size:3rem;
-        }
-    
-        &__pa{
-            color:$fourth;
-            font-size: 1rem;
-            font-weight:600;
-        }
-    
-        &__pb{
-            color:$third;
-            font-size: 1rem;
-            margin-top:0.5rem;
-            width:35rem;
-        }
-    
-        &__a{
-            color:$fourth;
-            font-weight:600;
-            margin-top:1rem;
-            border:solid 2px $fourth;
-            align-self:flex-start;
-            padding:0.5rem;
-            border-radius:5px;
-            text-decoration: none;
-            transition: background-color 200ms linear;
-            &:hover{
-                background-color: $link-hover;
-            }
-        }
+    &__h2 {
+      color: $third;
+      font-size: 3rem;
+      @include ani-b;
     }
 
-    &-social{
-        width:100%;
-        @include wB;
-        & a{
-            color:$secondary;
-            font-size:1.5rem;
-            padding-right:0.3rem;
-
-            &:hover{
-                color:$fourth;
-            }
-
-            & i:hover{
-                transform: translateY(-5px);
-                transition: 0.3s;
-            }
-        }
+    &__pa {
+      color: $fourth;
+      font-size: 1rem;
+      font-weight: 600;
+      @include ani-a;
     }
+
+    &__pb {
+      color: $third;
+      font-size: 1rem;
+      margin-top: -0.5rem;
+      width: 35rem;
+    }
+
+    &__a {
+      @include ani-b;
+
+      color: $fourth;
+      font-weight: 600;
+      margin-top: 1rem;
+      border: solid 2px $fourth;
+      align-self: flex-start;
+      padding: 0.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 200ms linear;
+
+      &:hover {
+        background-color: $link-hover;
+      }
+    }
+  }
+
+  &-social {
+    width: 100%;
+
+    @include ani-d;
+    @include wB;
+    animation-delay: 2s;
+    & a {
+      color: $secondary;
+      font-size: 1.5rem;
+      padding-right: 0.3rem;
+
+      &:hover {
+        color: $fourth;
+      }
+
+      & i:hover {
+        transform: translateY(-5px);
+        transition: 0.3s;
+      }
+    }
+  }
 }
 
-#about{
-    background:$white;
-    .container{
-        @include wA;
-        padding-top:5rem;
-        padding-bottom:5rem;
+#about {
+  background: $white;
+  .container {
+    @include wA;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  &-title {
+    @include wB;
+    &__h1 {
+      @include section-h1;
+    }
+  }
+
+  &-me {
+    @include wB;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+
+    h2 {
+      @include section-h2;
     }
 
-    &-title{
-        @include wB;
-        &__h1{
-            @include section-h1;
-        }
+    p {
+      @include section-p;
     }
 
-    &-me{
-        @include wB;
-        margin:auto;
-        display:flex;
-        flex-direction:row;
-        align-items: flex-start;
-        justify-content:center;
-        height:100%;
-
-        h2{
-            @include section-h2;
-        }
-
-        p{
-            @include section-p;
-        }
-
-        &__info{
-            @include mA;
-            width:100%;
-            height:100%;
-        }
-
-        &__skills{
-            @include mA;
-            width:100%;
-            height:100%;
-
-            & .container{
-                margin:0;
-                padding:0;
-                overflow:none;
-            }
-
-            span{
-                @include skills;
-            }
-        }
+    &__info {
+      @include mA;
+      width: 100%;
+      height: 100%;
     }
+
+    &__skills {
+      @include mA;
+      width: 100%;
+      height: 100%;
+
+      & .container {
+        margin: 0;
+        padding: 0;
+        overflow: none;
+      }
+
+      span {
+        @include skills;
+      }
+    }
+  }
 }
 
-#projects{
-    height:200vh;
-    background: $main;
-    .container{
-        @include wA;
-        padding-top:5rem;
-        padding-bottom:5rem;
+#projects {
+  background: $main;
+  .container {
+    @include wA;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  &-title {
+    @include wB;
+    &__h1 {
+      @include section-h1;
+
+      & span {
+        color: $fourth;
+      }
     }
+  }
 
-    &-title{
-        @include wB;
-        &__h1{
-            @include section-h1;
-         
-            & span{
-                color:$fourth;
-            }
-        }
-    }
+  .projects-works {
+    @include wB;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
 
-    .projects-works{
-        @include wB;
-        margin:auto;
-        display:flex;
-        flex-direction:row;
-        align-items: flex-start;
-        justify-content:center;
-        height:100%;
+    .projects-works__item {
+      @include mA;
 
-        .projects-works__item{
-            @include mA;
-            height:520px;
-            width: 800px;
+      span {
+        @include skills;
+      }
 
-            span{
-                @include skills;
-            }
-
-            h2{
-                color: $third;
-                font-size:2rem;
-                margin-bottom:0.5rem;
-                text-align:center;
-            }
-
-            p{
-                @include section-p;
-                margin-bottom:1.5rem;
-            }
-            
-            h3{
-                color: $secondary;
-                padding-top:1rem;
-                padding-bottom:0.2rem;
-            }
-
-            .container{
-                width:100%;
-                height:100%;
-                padding:2rem;
-                background:rgba(255, 255, 255, 0.200);
-                text-align:center;
-
-                .container{
-                    width:100%;
-                    height:1rem;
-                }
-            
-            }
-
-            img{
-                width:100%;
-            }
-
-            a{
-                color:$fourth;
-                font-weight:600;
-                margin-top:1rem;
-                border:solid 2px $fourth;
-                align-self:flex-start;
-                padding:0.5rem;
-                border-radius:5px;
-                text-decoration: none;
-                transition: background-color 200ms linear;
-                &:hover{
-                    background-color: $link-hover;
-                }
-                margin:1rem;
-            }
-        }
-    }
-}
-
-#contact{
-    height:100vh;
-    background: $white;
-    
-    .container{
-        @include wA;
-        padding-top:5rem;
-        padding-bottom:5rem;
-    }
-
-    &-title{
-        @include wB;
-        &__h1{
-            @include section-h1;
-        }
-    }
-
-    &-connect{
-        @include wB;
-        margin:auto;
-        display:flex;
-        flex-direction:row;
-        align-items: flex-start;
-        justify-content:center;
-        height:100%;
-
-        h2{
-            @include section-h2;
-        }
-
-        p{
-            @include section-p;
-        }
-
-        &__form{
-            @include mA;
-            width:100%;
-            height:100%;
-
-            & form{
-                display:flex;
-                flex-direction: column;
-                color:$third;
-                
-                & input{
-                    height:1.5rem;
-                    border: solid 1px $third;
-                }
-
-                #submit{
-                    font-family: $font-a;
-                    height:2rem;
-                    width:5rem;
-                    background:none;
-                    color:$fourth;
-                    font-weight:600;
-                    border:solid 2px $fourth;
-                    border-radius:5px;
-                    text-decoration: none;
-                    transition: background-color 200ms linear;
-                    cursor: pointer;
-                    
-                    &:hover{
-                        background-color: $link-hover;
-                    }
-                }
-
-                #message{
-                    min-height: 10rem;
-                }
-            }
-            
-
-            & input{
-
-            }
-        }
-    
-        &__social{
-            @include mA;
-            width:100%;
-            height:100%;
-
-            .container{
-                padding:0;
-                margin:0;
-                font-size:3rem;
-                & a{
-                    color:$secondary;
-                }
-
-                & a:hover{
-                    color:$fourth;
-                }
-                
-                & i{
-                    padding:1rem;
-                }
-
-
-            }
-        }
-    }
-}
-
-#footer{
-    background-color: $main;
-    height:10vh;
-    @include center;
-    &-logo{
-        color:$secondary;
-        font-family: $font-logo;
-        font-size:3rem;
-        padding:0 0.5rem;
-        margin:1rem;
-        border-radius:5px;
-        border-bottom:solid 2px $fourth;
-        text-decoration: none;
+      h2 {
+        color: $third;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
         text-align: center;
-        display:block;
-        margin:auto;
-        width:4rem;
+      }
+
+      p {
+        @include section-p;
+        margin-bottom: 1.5rem;
+      }
+
+      p:nth-of-type(1) {
+        font-weight: 600;
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
+      }
+
+      h3 {
+        color: $secondary;
+        padding-top: 1rem;
+        padding-bottom: 0.2rem;
+      }
+
+      .container {
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.2);
+        text-align: center;
+
+        .container {
+          width: 100%;
+          height: 1rem;
+          overflow: hidden;
+        }
+      }
+
+      img {
+        width: 100%;
+      }
+
+      a {
+        color: $fourth;
+        font-weight: 600;
+        margin-top: 1rem;
+        border: solid 2px $fourth;
+        align-self: flex-start;
+        padding: 0.5rem;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 200ms linear;
+        &:hover {
+          background-color: $link-hover;
+        }
+        margin: 1rem;
+      }
     }
+  }
 }
 
+#contact {
+  height: 100vh;
+  background: $white;
 
-.xx{
-    font-size:1rem;
-    color:$third;
-    padding:0.5rem 0.5rem;
-    font-weight:600;
-    opacity:75%;
+  .container {
+    @include wA;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  &-title {
+    @include wB;
+    &__h1 {
+      @include section-h1;
+    }
+  }
+
+  &-connect {
+    @include wB;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+
+    h2 {
+      @include section-h2;
+    }
+
+    p {
+      @include section-p;
+    }
+
+    &__form {
+      @include mA;
+      width: 100%;
+      height: 100%;
+
+      & form {
+        display: flex;
+        flex-direction: column;
+        color: $third;
+
+        & input {
+          height: 1.5rem;
+          border: solid 1px $third;
+        }
+
+        #submit {
+          font-family: $font-a;
+          height: 2rem;
+          width: 5rem;
+          background: none;
+          color: $fourth;
+          font-weight: 600;
+          border: solid 2px $fourth;
+          border-radius: 5px;
+          text-decoration: none;
+          transition: background-color 200ms linear;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $link-hover;
+          }
+        }
+
+        #message {
+          min-height: 10rem;
+          z-index: 3;
+          position: relative;
+          overflow: hidden;
+        }
+      }
+    }
+
+    &__social {
+      @include mA;
+      width: 100%;
+      height: 100%;
+
+      .container {
+        padding: 0;
+        margin: 0;
+        font-size: 3rem;
+        & a {
+          color: $secondary;
+        }
+
+        & a:hover {
+          color: $fourth;
+        }
+
+        & i {
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  background-color: $main;
+  height: 10vh;
+  @include center;
+  &-logo {
+    color: $secondary;
+    font-family: $font-logo;
+    font-size: 3rem;
+    padding: 0 0.5rem;
+    margin: 1rem;
+    border-radius: 5px;
+    border-bottom: solid 2px $fourth;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 4rem;
+  }
+}
+
+.xx {
+  font-size: 1rem;
+  color: $third;
+  padding: 0.5rem 0.5rem;
+  font-weight: 600;
+  opacity: 75%;
 }

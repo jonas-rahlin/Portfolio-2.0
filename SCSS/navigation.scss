@@ -1,0 +1,66 @@
+#navbar {
+  @import "animations";
+  width: 100%;
+  position: absolute;
+  background: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  @include ani-d;
+  animation-delay: 2s;
+
+  &-logo {
+    color: $secondary;
+    font-family: $font-logo;
+    font-size: 3rem;
+    padding: 0 0.5rem;
+    border-radius: 5px;
+    border-bottom: solid 2px $fourth;
+    text-decoration: none;
+  }
+  .container {
+    @include wB;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+}
+
+#navbar-links {
+  list-style: none;
+
+  .navbar-link {
+    display: inline-block;
+
+    & a {
+      color: $secondary;
+      text-decoration: none;
+      padding: 0.5rem;
+      transition: background-color 200ms linear;
+      &:hover {
+        background: $link-hover;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  #navbar-link__last {
+    border: solid 2px $fourth;
+    border-radius: 5px;
+
+    & a {
+      color: $fourth;
+      width: 100%;
+      height: 100%;
+      padding: 0.5rem;
+      display: block;
+      transition: background-color 200ms linear;
+    }
+  }
+
+  .navbar-link__no {
+    color: $fourth;
+  }
+}
