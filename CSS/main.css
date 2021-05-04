@@ -50,7 +50,7 @@ html {
   font-size: 3rem;
   padding: 0 0.5rem;
   border-radius: 5px;
-  border-bottom: solid 2px #347d8f;
+  border-bottom: solid 2px #1c9fc0;
   text-decoration: none;
 }
 
@@ -95,12 +95,12 @@ html {
 }
 
 #navbar-links #navbar-link__last {
-  border: solid 2px #347d8f;
+  border: solid 2px #1c9fc0;
   border-radius: 5px;
 }
 
 #navbar-links #navbar-link__last a {
-  color: #347d8f;
+  color: #1c9fc0;
   width: 100%;
   height: 100%;
   padding: 0.5rem;
@@ -110,7 +110,7 @@ html {
 }
 
 #navbar-links .navbar-link__no {
-  color: #347d8f;
+  color: #1c9fc0;
 }
 
 body {
@@ -181,7 +181,7 @@ body {
 }
 
 #hero-title__pa {
-  color: #347d8f;
+  color: #1c9fc0;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -196,10 +196,10 @@ body {
 #hero-title__a {
   -webkit-animation: slide-in-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  color: #347d8f;
+  color: #1c9fc0;
   font-weight: 600;
   margin-top: 1rem;
-  border: solid 2px #347d8f;
+  border: solid 2px #1c9fc0;
   -ms-flex-item-align: start;
       align-self: flex-start;
   padding: 0.5rem;
@@ -274,7 +274,7 @@ body {
 }
 
 #hero-social a:hover {
-  color: #347d8f;
+  color: #1c9fc0;
 }
 
 #hero-social a i:hover {
@@ -308,7 +308,7 @@ body {
 }
 
 #about-title__h1 span {
-  color: #347d8f;
+  color: #1c9fc0;
 }
 
 #about-me {
@@ -399,11 +399,11 @@ body {
 }
 
 #projects-title__h1 span {
-  color: #347d8f;
+  color: #1c9fc0;
 }
 
 #projects-title__h1 span {
-  color: #347d8f;
+  color: #1c9fc0;
 }
 
 #projects .projects-works {
@@ -494,9 +494,9 @@ body {
 #projects .projects-works .projects-works__item a:nth-of-type(2),
 #projects .projects-works .projects-works__item a:nth-of-type(3) {
   display: inline-block;
-  color: #347d8f;
+  color: #1c9fc0;
   font-weight: 600;
-  border: solid 2px #347d8f;
+  border: solid 2px #1c9fc0;
   -ms-flex-item-align: start;
       align-self: flex-start;
   padding: 0.5rem;
@@ -536,7 +536,7 @@ body {
 }
 
 #contact-title__h1 span {
-  color: #347d8f;
+  color: #1c9fc0;
 }
 
 #contact-connect {
@@ -597,9 +597,9 @@ body {
   height: 2rem;
   width: 5rem;
   background: none;
-  color: #347d8f;
+  color: #1c9fc0;
   font-weight: 600;
-  border: solid 2px #347d8f;
+  border: solid 2px #1c9fc0;
   border-radius: 5px;
   text-decoration: none;
   -webkit-transition: background-color 200ms linear;
@@ -639,7 +639,7 @@ body {
 }
 
 #contact-connect__social .container a:hover {
-  color: #347d8f;
+  color: #1c9fc0;
 }
 
 #contact-connect__social .container i {
@@ -667,7 +667,7 @@ body {
   padding: 0 0.5rem;
   margin: 1rem;
   border-radius: 5px;
-  border-bottom: solid 2px #347d8f;
+  border-bottom: solid 2px #1c9fc0;
   text-decoration: none;
   text-align: center;
   display: block;
