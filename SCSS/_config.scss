@@ -3,13 +3,13 @@ $font-a: Montserrat;
 $font-logo: Pulsar-Original;
 $black: #1b1b1b;
 $white: white;
-$grey: #d3d3d3;
-$main: white;
+$grey: #dbdbdb;
+$main: rgb(248, 245, 238);
 $main-faded: #dee2ee79;
-$secondary: #2a324b;
+$secondary: #262b3d;
 $third: #767b91;
 $third-faded: rgba(118, 123, 145, 0.3);
-$fourth: #17a4c7;
+$fourth: #347d8f;
 $link-hover: rgba(23, 164, 199, 0.2);
 
 @mixin section-h1 {

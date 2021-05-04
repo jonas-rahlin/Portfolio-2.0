@@ -16,8 +16,8 @@ body {
       rgba(222, 226, 238, 0.9),
       rgba(222, 226, 238, 0.5)
     ),
-    url(../photo-1612524103232-cbdd7a263230.jfif);
-  background-position: center;
+    url(../Assets/bg2.jfif);
+  background-position: top;
   .container {
     @include wA;
     height: 94%;
@@ -34,20 +34,17 @@ body {
     &__h1 {
       color: $secondary;
       font-size: 4rem;
-      @include ani-b;
     }
 
     &__h2 {
       color: $third;
       font-size: 3rem;
-      @include ani-b;
     }
 
     &__pa {
       color: $fourth;
       font-size: 1rem;
       font-weight: 600;
-      @include ani-a;
     }
 
     &__pb {
@@ -58,7 +55,7 @@ body {
     }
 
     &__a {
-      @include ani-b;
+      @include ani-a;
 
       color: $fourth;
       font-weight: 600;
@@ -185,6 +182,8 @@ body {
 
     .projects-works__item {
       @include mA;
+      width: 100%;
+      height: 100%;
 
       span {
         @include skills;
@@ -209,7 +208,7 @@ body {
 
       h3 {
         color: $secondary;
-        padding-top: 1rem;
+        padding-top: 0.5rem;
         padding-bottom: 0.2rem;
       }
 
@@ -228,11 +227,13 @@ body {
 
       img {
         width: 100%;
+        height: 200px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
       }
 
-      a {
+      a:nth-of-type(2),
+      a:nth-of-type(3) {
         display: inline-block;
         color: $fourth;
         font-weight: 600;
@@ -336,6 +337,7 @@ body {
       .container {
         padding: 0;
         margin: 0;
+        align-items: center;
         font-size: 2rem;
         & a {
           color: $secondary;
@@ -346,7 +348,7 @@ body {
         }
 
         & i {
-          padding: 1rem 0rem 1rem;
+          padding: 0rem 1rem 0rem 0rem;
         }
       }
     }
@@ -355,7 +357,7 @@ body {
 
 #footer {
   background-color: $main;
-  height: 10vh;
+  font-weight: 600;
   @include center;
   &-logo {
     color: $secondary;
@@ -371,6 +373,13 @@ body {
     margin: auto;
     width: 4rem;
   }
+
+  p {
+    color: $third;
+    margin: 1rem;
+    font-size: 1rem;
+    opacity: 50%;
+  }
 }
 
 .xx {
@@ -382,6 +391,9 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
+  #navbar-logo {
+  }
+
   #about-me {
     flex-direction: column;
   }
@@ -396,6 +408,14 @@ body {
 
   .projects-works {
     flex-direction: column !important;
+  }
+
+  .projects-works__item {
+    width: auto !important;
+  }
+
+  .projects-works__item img {
+    height: 240px !important;
   }
 
   #contact-connect {
