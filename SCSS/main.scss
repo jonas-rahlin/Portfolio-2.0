@@ -228,6 +228,8 @@ body {
 
       img {
         width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
       }
 
       a {
@@ -334,7 +336,7 @@ body {
       .container {
         padding: 0;
         margin: 0;
-        font-size: 3rem;
+        font-size: 2rem;
         & a {
           color: $secondary;
         }
@@ -344,7 +346,7 @@ body {
         }
 
         & i {
-          padding: 1rem;
+          padding: 1rem 0rem 1rem;
         }
       }
     }

@@ -141,7 +141,7 @@ body {
 
 #hero {
   height: 100vh;
-  background-color: #dee2ee;
+  background-color: white;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(222, 226, 238, 0.9)), to(rgba(222, 226, 238, 0.5))), url(../photo-1612524103232-cbdd7a263230.jfif);
   background: linear-gradient(rgba(222, 226, 238, 0.9), rgba(222, 226, 238, 0.5)), url(../photo-1612524103232-cbdd7a263230.jfif);
   background-position: center;
@@ -393,7 +393,7 @@ body {
 }
 
 #about {
-  background: #dee2ee;
+  background: white;
 }
 
 #about .container {
@@ -484,7 +484,7 @@ body {
 }
 
 #projects {
-  background: #dee2ee;
+  background: white;
 }
 
 #projects .container {
@@ -592,6 +592,8 @@ body {
 
 #projects .projects-works .projects-works__item img {
   width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 #projects .projects-works .projects-works__item a {
@@ -614,7 +616,7 @@ body {
 }
 
 #contact {
-  background: #dee2ee;
+  background: white;
 }
 
 #contact .container {
@@ -729,7 +731,7 @@ body {
 #contact-connect__social .container {
   padding: 0;
   margin: 0;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 #contact-connect__social .container a {
@@ -741,11 +743,11 @@ body {
 }
 
 #contact-connect__social .container i {
-  padding: 1rem;
+  padding: 1rem 0rem 1rem;
 }
 
 #footer {
-  background-color: #dee2ee;
+  background-color: white;
   height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
