@@ -19,3 +19,19 @@ imgB.addEventListener("mouseover", () =>{
 imgB.addEventListener("mouseleave", () =>{
     imgB.src = "../Assets/Projects Pictures/apples-s.png";
 })
+
+imgC.addEventListener("mouseover", () =>{
+    imgC.src = "../Assets/Projects Pictures/cebeko.gif";
+})
+
+imgC.addEventListener("mouseleave", () =>{
+    imgC.src = "../Assets/Projects Pictures/cebeko-s.png";
+})
+
+imgD.addEventListener("mouseover", () =>{
+    imgD.src = "../Assets/Projects Pictures/badass.gif";
+})
+
+imgD.addEventListener("mouseleave", () =>{
+    imgD.src = "../Assets/Projects Pictures/badass-s.png";
+})
