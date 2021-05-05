@@ -8,6 +8,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/c6cded4324.js" crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body>
         <header>
@@ -29,7 +31,7 @@
                     <div id="hero-title">
                         <p id="hero-title__pa">Hello, my name is</p>
                         <h1 id="hero-title__h1">Jonas Råhlin.</h1>
-                        <h2 id="hero-title__h2">I build things for the Internet.</h2>
+                        <h2 id="hero-title__h2">I build things for the Web.</h2>
                         <a id="hero-title__a" href="#projects">My Projects</a>
                     </div>
                 </div>
@@ -42,14 +44,14 @@
             </section>
             <section id="about">
                 <div class="container">
-                    <div id="about-title">
+                    <div id="about-title" data-aos="fade-up">
                         <h1 id="about-title__h1"><span>01. </span>About</h1>
                         <p class="xx">Get to know me better.</p>
                     </div>
-                    <div id="about-me">
+                    <div id="about-me" data-aos="fade-up">
                        <div id="about-me__info">
                           <h2 class="about-me__h2">Who am I?</h2>
-                          <p class="about-me__p">My name is <strong>Jonas Råhlin</strong> and I'm a <strong>solid & creative</strong> person who truly enjoys doing <strong>Frontend Development.</strong><br>
+                          <p class="about-me__p">My name is <strong>Jonas Råhlin</strong> and I'm a <strong>solid & creative</strong> person who enjoys doing <strong>Frontend Development.</strong><br>
                             Iv'e got a passion for both <strong>art and language</strong> and I'm a <strong>problem solver</strong> who loves to create and expand upon new solutions.<br><br>
                             I'm currently based in <strong>Stockholm, Sweden</strong> and looking for an <strong>entry level developer position</strong>.</p>
                        </div>
@@ -70,46 +72,46 @@
             </section>
             <section id="projects">
                 <div class="container">
-                    <div id="projects-title">
+                    <div id="projects-title" data-aos="fade-up">
                         <h1 id="projects-title__h1"><span>02. </span>Projects</h1>
                         <p class="xx">Some of my most recent projects.</p>
                     </div>
-                    <div id ="projects-works__a" class="projects-works">
+                    <div id ="projects-works__a" class="projects-works" data-aos="fade-up">
                         <div id="projects-works__item-a" class="projects-works__item">
                             <div class="container">
-                                <a href="https://servantsapp.leafhillmedia.com/"><img id="project-img__a" src="../Assets/Projects Pictures/servants-s.png" alt=""></a>
                                 <h2 class="about-me__h2">Forty Servants</h2>
                                 <p>HTML / CSS / JAVASCRIPT</p>
-                                <p>The Forty Servants is a divination deck web application made for desktop, and is based upon The Forty Servants by Tommie Kelly. Complete with Youtube video links and realtime information about each card. Choose your spread and shuffle the decks.</p>
+                                <a href="https://servantsapp.leafhillmedia.com/"><img id="project-img__a" src="../Assets/Projects Pictures/servants-s.png" alt=""></a>
+                                <p>The Forty Servants is a <b>divination deck web application</b> made for desktop, and is based upon The Forty Servants by <b>Tommie Kelly</b>. Complete with Youtube video links and realtime information about each card. Choose your spread and shuffle the decks.</p>
                                 <a href="https://servantsapp.leafhillmedia.com/">Visit <i class="fas fa-external-link-alt"></i></a><a href="https://github.com/jonas-rahlin/The-Forty-Servants-App1">Github <i class="fab fa-github-alt"></i></a>
                             </div>
                          </div>
                          <div id="projects-works__item-b" class="projects-works__item">
                             <div class="container">
-                                <a href="https://appleclone.leafhillmedia.com/"><img id="project-img__b" src="../Assets/Projects Pictures/apples-s.png" alt=""></a>
                                 <h2 class="about-me__h2">Apple.com Clone</h2>
                                 <p>HTML / CSS / JAVASCRIPT</p>
-                                <p>This is a recreation of the apple.com landing page from late <b>December 2020</b>. Since I could not gain access to Apples font, I took some liberties with the font sizes and margins to achieve a look that was as close to the original as possible.</p>
+                                <a href="https://appleclone.leafhillmedia.com/"><img id="project-img__b" src="../Assets/Projects Pictures/apples-s.png" alt=""></a>
+                                <p>This is a <b>recreation of the apple.com</b> landing page from late <b>December 2020</b>. Since I could not gain access to Apples font, I took some liberties with the font sizes and margins to achieve a look that was as close to the original as possible.</p>
                                 <a href="https://appleclone.leafhillmedia.com/">Visit <i class="fas fa-external-link-alt"></i></a><a href="https://github.com/jonas-rahlin/Apple-Recreate">Github <i class="fab fa-github-alt"></i></a>
                             </div>
                          </div>
                     </div>
-                    <div id ="projects-works__b" class="projects-works">
+                    <div id ="projects-works__b" class="projects-works" data-aos="fade-up">
                         <div id="projects-works__item-a" class="projects-works__item">
                             <div class="container">
-                                <a href="https://cebeko.leafhillmedia.com/"><img img id="project-img__c" src="../Assets/Projects Pictures/cebeko-s.png" alt=""></a>
                                 <h2 class="about-me__h2">Cebeko Accounting</h2>
                                 <p>HTML / CSS / JAVASCRIPT / RESPONSIVE / BOOTSTRAP 4</p>
-                                <p>This is a standard business site that I've made for an Accounting firm called Cebeko Redovisning AB. It was made to include certain preferences from the customer, such as GDPR modal, SRF newswatch and login to their servers.</p>
+                                <a href="https://cebeko.leafhillmedia.com/"><img img id="project-img__c" src="../Assets/Projects Pictures/cebeko-s.png" alt=""></a>
+                                <p>This is a standard <b>business site</b> that I've made for an Accounting firm called Cebeko Redovisning AB. It was made to include certain <b>preferences from the customer</b>, such as GDPR modal, SRF newswatch and login to their servers.</p>
                                 <a href="https://cebeko.leafhillmedia.com/">Visit <i class="fas fa-external-link-alt"></i></a><a href="#">Github <i class="https://github.com/jonas-rahlin/Cebeko-Accounting"></i></a>
                             </div>
                          </div>
                          <div id="projects-works__item-b" class="projects-works__item">
                             <div class="container">
-                                <a href="https://badassburgers.leafhillmedia.com/"><img img id="project-img__d" src="../Assets/Projects Pictures/badass-s.png" alt=""></a>
                                 <h2 class="about-me__h2">Badass Burgers</h2>
                                 <p>HTML / CSS / JAVASCRIPT / RESPONSIVE</p>
-                                <p>Badass Burgers is a fictitious hamburger restaurant. The site was made to mimmick some of the already existing hamburger restaurants in the area, and features all relevant things for a restaurant landing page.</p>
+                                <a href="https://badassburgers.leafhillmedia.com/"><img img id="project-img__d" src="../Assets/Projects Pictures/badass-s.png" alt=""></a>
+                                <p>Badass Burgers is a <b>fictitious hamburger restaurant</b>. The site was made to mimic some of the already existing hamburger restaurants in the area, and features all relevant things for a <b>restaurant landing page.</b></p>
                                 <a href="https://badassburgers.leafhillmedia.com/">Visit <i class="fas fa-external-link-alt"></i></a><a href="https://github.com/jonas-rahlin/Badass-Burgers">Github <i class="fab fa-github-alt"></i></a>
                             </div>
                          </div>
@@ -118,11 +120,11 @@
             </section>
             <section id="contact">
                 <div class="container">
-                    <div id="contact-title">
+                    <div id="contact-title" data-aos="fade-up">
                         <h1 id="contact-title__h1"><span>03. </span>Contact</h1>
                         <p class="xx">Fill out the form to get in touch.</p>
                     </div>
-                    <div id="contact-connect">
+                    <div id="contact-connect" data-aos="fade-up">
                         <div id="contact-connect__form">
                             <h2 class="contact-connect__h2">Mail.</h2>
                             <form target="_blank" action="https://formspree.io/f/xbjpbnwk" method="POST">

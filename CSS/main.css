@@ -12,7 +12,6 @@
 
 html {
   scroll-behavior: smooth;
-  height: 100%;
 }
 
 #navbar {
@@ -21,10 +20,10 @@ html {
   background: none;
   font-size: 0.8rem;
   font-weight: 600;
-  -webkit-animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
 }
 
 @-webkit-keyframes fade-in {
@@ -118,9 +117,8 @@ body {
   background-color: white;
   font-size: 16px;
   font-family: Montserrat;
-  -webkit-animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  height: 100%;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 @-webkit-keyframes fade-in {
@@ -143,9 +141,9 @@ body {
 
 #hero {
   height: 100vh;
-  background-color: #f8f5ee;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(222, 226, 238, 0.9)), to(rgba(222, 226, 238, 0.5))), url(../Assets/bg2.jfif);
-  background: linear-gradient(rgba(222, 226, 238, 0.9), rgba(222, 226, 238, 0.5)), url(../Assets/bg2.jfif);
+  background-color: #ebeef0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(222, 226, 238, 0.9)), to(rgba(222, 226, 238, 0.5))), url(../Assets/bg.jfif);
+  background: linear-gradient(rgba(222, 226, 238, 0.9), rgba(222, 226, 238, 0.5)), url(../Assets/bg.jfif);
   background-position: top;
 }
 
@@ -196,8 +194,8 @@ body {
 }
 
 #hero-title__a {
-  -webkit-animation: slide-in-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-in-left 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-left 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   color: #1c9fc0;
   font-weight: 600;
   margin-top: 1rem;
@@ -243,12 +241,12 @@ body {
 
 #hero-social {
   width: 100%;
-  -webkit-animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   margin: auto;
   width: 90%;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
 }
 
 @-webkit-keyframes fade-in {
@@ -287,7 +285,7 @@ body {
 }
 
 #about {
-  background: #f8f5ee;
+  background: #ebeef0;
 }
 
 #about .container {
@@ -335,7 +333,7 @@ body {
 
 #about-me h2 {
   font-size: 2rem;
-  color: #767b91;
+  color: #262b3d;
   margin-bottom: 0.5rem;
 }
 
@@ -378,7 +376,7 @@ body {
 }
 
 #projects {
-  background: #f8f5ee;
+  background: #ebeef0;
 }
 
 #projects .container {
@@ -451,8 +449,8 @@ body {
 }
 
 #projects .projects-works .projects-works__item h2 {
-  color: #767b91;
   font-size: 2rem;
+  color: #262b3d;
   margin-bottom: 0.5rem;
   text-align: center;
 }
@@ -488,9 +486,16 @@ body {
 
 #projects .projects-works .projects-works__item img {
   width: 100%;
-  height: 200px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  height: 100%;
+  padding-bottom: 0.5rem;
+  border-radius: 10px 10px 0px 0px;
+}
+
+#projects .projects-works .projects-works__item img:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  -webkit-transition: 250ms linear;
+  transition: 250ms linear;
 }
 
 #projects .projects-works .projects-works__item a:nth-of-type(2),
@@ -515,7 +520,7 @@ body {
 }
 
 #contact {
-  background: #f8f5ee;
+  background: #ebeef0;
 }
 
 #contact .container {
@@ -563,7 +568,7 @@ body {
 
 #contact-connect h2 {
   font-size: 2rem;
-  color: #767b91;
+  color: #262b3d;
   margin-bottom: 0.5rem;
 }
 
@@ -647,7 +652,7 @@ body {
 }
 
 #contact-connect__social .container i {
-  padding-right: 1rem;
+  margin-right: 1rem;
   font-size: 2.5rem;
 }
 
@@ -659,7 +664,7 @@ body {
 }
 
 #footer {
-  background-color: #f8f5ee;
+  background-color: #ebeef0;
   font-weight: 600;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -4,7 +4,7 @@ $font-logo: Pulsar-Original;
 $black: #1b1b1b;
 $white: white;
 $grey: #dbdbdb;
-$main: rgb(248, 245, 238);
+$main: #ebeef0;
 $main-faded: #dee2ee79;
 $secondary: #262b3d;
 $third: #767b91;
@@ -24,7 +24,7 @@ $link-hover: rgba(23, 164, 199, 0.2);
 
 @mixin section-h2 {
   font-size: 2rem;
-  color: $third;
+  color: $secondary;
   margin-bottom: 0.5rem;
 }
 
@@ -46,10 +46,6 @@ $link-hover: rgba(23, 164, 199, 0.2);
     transform: scale(0.95);
   }
 }
-
-// $font-size-a:;
-// $font-size-b:;
-// $font-size-c:;
 
 @mixin wB {
   margin: auto;
@@ -86,5 +82,4 @@ $link-hover: rgba(23, 164, 199, 0.2);
 
 html {
   scroll-behavior: smooth;
-  height: 100%;
 }

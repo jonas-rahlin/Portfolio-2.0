@@ -1,9 +1,10 @@
-
+//Get Project Images
 const imgA = document.getElementById("project-img__a");
 const imgB = document.getElementById("project-img__b");
 const imgC = document.getElementById("project-img__c");
 const imgD = document.getElementById("project-img__d");
 
+//Set event Listeners for Project Images & set GIF on hover
 imgA.addEventListener("mouseover", () =>{
     imgA.src = "../Assets/Projects Pictures/servants.gif";
 })
@@ -35,3 +36,8 @@ imgD.addEventListener("mouseover", () =>{
 imgD.addEventListener("mouseleave", () =>{
     imgD.src = "../Assets/Projects Pictures/badass-s.png";
 })
+
+//Initiate AOS Library
+AOS.init({
+    duration: 1200,
+  })
